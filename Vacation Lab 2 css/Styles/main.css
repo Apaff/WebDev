@@ -1,0 +1,42 @@
+/* the styles for the elements */ 
+body
+{
+	background-color: #ccccff;
+}
+
+/* the styles for the header */
+header img
+{
+	float: right;
+}
+
+header h1 {
+	font size: 150%;
+}
+
+/* the styles for the main section*/
+main
+{
+	clear: left;
+}
+
+main a:focus, a:hover{
+	font-style: italic;
+}
+
+main p {
+	text-align: left;
+	color: red;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-right: 150px;
+	margin-left: 80px;
+}
+
+
+
+/* the styles for the footer */
+
+footer p {
+	text-align: center;
+}
