@@ -2,23 +2,21 @@
 body
 {
 	background-color: #ccccff;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-right: 150px;
+	margin-left: 80px;
 }
 
 /* the styles for the header */
-header img
-{
-	float: right;
-}
 
 header h1 {
 	font size: 150%;
+	color: red;
 }
 
 /* the styles for the main section*/
-main
-{
-	clear: left;
-}
+
 
 main a:focus, a:hover{
 	font-style: italic;
@@ -26,16 +24,22 @@ main a:focus, a:hover{
 
 main p {
 	text-align: left;
-	color: red;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	margin-right: 150px;
-	margin-left: 80px;
+	
+	
+}
+
+main img
+{
+	float: right;
 }
 
 
-
 /* the styles for the footer */
+
+footer
+{
+	clear: left;
+}
 
 footer p {
 	text-align: center;
