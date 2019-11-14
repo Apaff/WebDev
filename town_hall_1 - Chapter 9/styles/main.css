@@ -1,0 +1,277 @@
+                                                                                                                                                                                                                                                                                                                                                                                                             /* the reset selector*/
+*{
+	margin: 0;
+	padding:0;
+
+}
+/* the styles for the elements */
+
+html
+{
+	background-color: white; 
+
+}
+
+body 
+{
+	font-family: Arial, Helvetica, sans-serif;
+    	font-size: 100%;
+	margin:0 auto;
+	max-width: 960px;
+	width: 98%;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+.shadow{
+	text-shadow: 3px 3px 3px #800000;	
+}
+a:focus, a:hover{
+	font-style: italic;
+}
+
+
+/* the styles for the header */
+
+header
+{
+	border-bottom-style: solid;
+	border-width: 3px;
+	border-color: #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%); 
+}
+
+header img 
+{
+	float: left;
+	padding-right: 30px 3.125%;
+	padding-left: 30px 3.125%;
+} 
+
+header h2 {
+	font-size: 170%;
+	color: #800000;		
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;	
+}
+
+/*mobile_menu*/
+
+#mobile_menu {display: none;}
+
+/* the styles for the nav id*/
+
+#nav_menu ul {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0 0;
+	padding: 0 0;
+	position: relative;
+
+}
+
+#nav_menu ul li {
+	
+	flex-basis: 20%;
+}
+
+#nav_menu ul li a {
+
+	display: block;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu a.current {
+	color: yellow;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute; 
+	top: 100%; 
+	width: 100%;
+}
+
+#nav_menu ul ul li {
+	Width: 20%;
+}
+
+#nav_menu ul li:hover ul {
+	display: block;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+}
+
+/* the styles for the main section */
+main 
+{
+	display: flex;
+}
+
+
+/* the styles for the section */
+
+section
+{
+	flex-basis: 70%;
+	padding-right: 20px 2.0833333333%;
+	padding-left: 20px 2.0833333333%;
+	padding-bottom: 20px;
+	order: 2;
+}
+
+section h1
+{
+	font-size: 150%;
+	padding-top .5em;
+	padding-bottom: .25em;
+	margin: 0 0; 
+}
+
+section h2
+{
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25;
+}
+
+section blockquote {
+	padding-right: 2em;
+	padding-left: 2em;
+	font-style: italic;
+}
+
+section ul {
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+	list-style: circle;
+}
+
+section li {
+	padding-bottom: .35em;
+}
+
+section p {
+	padding-bottom: .5em;
+}
+
+
+
+/* the styles for the article */
+article{
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-color: #800000;
+	
+}
+
+article img{
+	float:  right;
+	margin: 1em;
+	border: 1px solid;
+	max-width: 40%;
+	min-width: 150px;
+}
+
+article h2{
+	padding-top: 0;
+}
+
+article h3{
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+/* the styles for the aside */
+
+aside
+{
+	flex-basis: 30%;
+	padding-left: 2.0833333333%;
+	padding-bottom: 2.0833333333%;
+	order: 1;
+}
+
+aside h2
+{
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25;
+}
+
+aside h3
+{
+	font-size: 105%;
+	padding-bottom: .25em;
+	
+}
+
+aside img
+{
+	padding-bottom: 1em;
+}
+
+
+/* the styles for the footer */
+
+footer
+{
+	background-color: #931420;
+	
+}
+
+footer p {
+	text-align: center; 
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+		
+}
+
+/*tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+
+section h1 {font-size: 135%;}
+section h2 { font-size: 120%;}
+aside h2 { font-size: 120%;}
+}
+
+/*mobile landcape*/
+@media only screen and (max-width: 767px) {
+header{text-align: center;}
+aside {order: 2;}
+section {order: 1;}
+aside {padding-left: 2.0833333333%;}
+section { width: 98%;}
+aside { width: 98%;}
+article img {max-width: 30%;}
+div{column-count: 2;}
+#nav_menu{ display: none;}
+#mobile_menu{display: block;}
+.slicknav_menu {background: #800000 !important;}
+}
+
+/*mobile portrait to mobile landscape*/
+@media only screen and (max-width: 479px) {
+body {font-size: 90%;}
+}
+
