@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #8b0000;
+    margin: auto;
+    width: 70%;
+}
+body img{
+    width:400px;
+    height: 400px;
+
+}
+.pictures{
+    display: grid;
+    grid-template: repeat(3, 200px)/repeat(3, 200px);
+    grid-row-gap: 100px;
+    grid-column-gap: 150px;
+    
+    justify-content: space-between;
+    
+}
+.item{
+    padding: 10px;
+}
+
